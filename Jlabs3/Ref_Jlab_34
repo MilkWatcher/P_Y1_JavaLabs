@@ -1,0 +1,35 @@
+public class Jlab_34 {
+    public static void main(String Args[]) {
+        int index;
+        int number;
+        int numberCount = 0;
+
+        int largest = Integer.MIN_VALUE;
+        int smallest = Integer.MAX_VALUE;
+        int total = 0;
+        double averageValue;
+
+        System.out.print("How many numbers do you want to enter...");
+        numberCount = EasyIn.getInt();
+
+        for (index = 0; index < numberCount; index++) {
+            System.out.print("Enter a value...");
+            number = EasyIn.getInt();
+            total = total + number;
+
+            if (index == 0 || number > largest) {
+                largest = number;
+            }
+
+            if (index == 0 || number < smallest) {
+                smallest = number;
+            }
+        }
+
+        averageValue = (double) total / numberCount;
+
+        System.out.println("Average Value... " + averageValue);
+        System.out.println("Largest Value... " + largest);
+        System.out.println("Smallest Value... " + smallest);
+    }
+}
