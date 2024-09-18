@@ -38,7 +38,7 @@ whether the average mark is a :
 				System.out.println(totalMarks+" : DISTINCTION");
 			}
     	else if((totalMarks>=63)&&(totalMarks<=69))
-    		{
+    			{
 				System.out.println(totalMarks+" : MERIT1");
 			}
 		else if((totalMarks>=55)&&(totalMarks<=62))
